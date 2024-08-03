@@ -1,0 +1,357 @@
+/*@font-face {
+  font-family: "Martian Mono";
+  src: url("./fonts/MartianMono.woff2") format("woff2"),
+       url("./fonts/MartianMono.woff") format("woff");
+  font-weight: 400; /* Default weight 
+  font-style: normal;
+}*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Your unique font class */
+/*.martian-mono-custom {
+  font-family: "Martian Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Example weight; adjust as needed 
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  z-index: 100;
+  background: transparent;
+  padding: 0rem calc((100vw- 1400px) / 2) 
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 10px;
+  @media (max-width: 450px) {
+    font-size: 1.2rem;
+  }
+}
+
+.highlight {
+  color: #ee0962
+}
+
+.color-highlight {
+  color: #ee0962 /* Replace with your desired color */
+}
+
+.nav-links {
+  margin-right: 2rem;
+  text-decoration: none;
+  color: #fff;
+  padding: 0rem 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding: 10px 10%;
+  overflow: hidden;
+  background: linear-gradient(0deg, #575757, #000000);
+  position: relative;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.93), 
+    rgba(0, 0, 0, 0.93) 
+  ), url('circuit.png'); /* Set your background image here */
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  @media (max-width: 450px) {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+nav {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 80px;
+  width: auto;
+  @media (max-width: 450px) {
+    width: 60px;
+  }
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 40px;
+  color: #fff;
+  background-image: linear-gradient(80deg, #a96f44, #ff99c1, #ee0962);
+  font-size: 14px;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  transition: 0.5s;
+  @media (max-width: 450px) {
+    display: block; /* Ensure the button is treated as a block-level element */
+    padding: 14px 40px; /* Adjust padding if needed */
+    font-size: 16px; /* Adjust font size if needed */
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.content{
+  margin-top: 10%;
+  max-width: 800px;
+}
+
+.content h1{
+  font-size: 70px;
+  color: #fff;
+  @media (max-width: 450px) {
+    font-size: 65px; 
+    text-align: center;
+  }
+}
+
+.content p {
+  margin: 10px 0 30px;
+  color: #fff;
+  font-size: 20px;
+  animation-delay: 0.5s;
+  @media (max-width: 450px) {
+    font-size: 20px; 
+    text-align: center;
+  }
+}
+
+.content a {
+  @media (max-width: 450px) {
+    text-align: center;
+  }
+}
+
+.content .btn {
+  padding: 15px 80px;
+  font-size: 16px;
+  animation-delay: 1s;
+}
+
+.btn:hover {
+  border-top-right-radius: 30px;
+}
+
+.anim {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards; 
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveup {
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.image-container {
+  position: relative;
+}
+
+.feature-img {
+  max-width: 700px;
+  height: auto;
+  margin-left: 2rem;
+  padding-top: 200px;
+  text-align: center;
+  @media (max-width: 450px) {
+    width: 400px;
+    height: auto;
+    margin-left: 0px;
+    padding-top: 50px;
+    animation-delay: 1.5s;
+  }
+  @media (max-width: 768px) {
+    padding-top: 50px;
+    animation-delay: 1.5s;
+  }
+}
+
+.features-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.features-content h1 {
+  font-size: 3rem;
+  color: #fff; 
+  padding-top: 80px;
+  animation-delay: 1.5s;
+  @media (max-width: 450px) {
+    padding-top: 50px;
+  }
+}
+
+.feature-img2 {
+  padding-top: 50px;
+  animation-delay: 1.5s;
+  width: 500px;
+  @media (max-width: 450px) {
+    width: 450px;
+  }
+}
+
+.feature-img3 {
+  padding-top: 50px;
+  animation-delay: 1.5s;
+  width: 500px;
+  @media (max-width: 450px) {
+    width: 450px;
+  }
+}
+
+.feature-img4 {
+  padding-top: 50px;
+  animation-delay: 1.5s;
+  width: 500px;
+  @media (max-width: 450px) {
+    width: 450px;
+  }
+}
+
+.image-text {
+  position: relative;
+  display: inline-block; /* Ensures container is only as wide as its content */
+}
+
+.image-text-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-img1 {
+  width: 350px;
+  animation-delay: 1.5s;
+  margin-right: 100px;
+  @media (max-width: 450px) {
+    width: 0px;
+    margin-right: 0px;
+  }
+  @media (max-width: 768px) {
+    width: 0px;
+    margin-right: 0px;
+  }
+}
+
+.side-img2 {
+  width: 350px;
+  animation-delay: 1.5s;
+  margin-left: 100px;
+  @media (max-width: 450px) {
+    width: 0px;
+    margin-left: 0px;
+  }
+  @media (max-width: 768px) {
+    width: 0px;
+    margin-left: 0px;
+  }
+}
+
+.side-img3 {
+  width: 350px;
+  animation-delay: 1.5s;
+  margin-right: 100px;
+  @media (max-width: 450px) {
+    width: 0px;
+    margin-right: 0px;
+  }
+  @media (max-width: 768px) {
+    width: 0px;
+    margin-right: 0px;
+  }
+}
+
+.image-text p {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  animation-delay: 1.5s;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #575757;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

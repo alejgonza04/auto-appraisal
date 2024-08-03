@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+            const cars = {
+                'select' : ['Select Car Model'],
+                'Acura' : ['RDX', 'MDX', 'TLX', 'RLX', 'ILX', 'TSX', 'TL', 'MDX Sport Hybrid', 'RLX Sport Hybrid', 'RL'],
+                'Alfa Romeo' : ['Giulia', 'Stelvio', '4C Spider'],
+                'Audi' : ['A Sportback e-tron', 'Q', 'A', 'S', 'TT', 'e-tron', 'allroad', 'A4', 'A6', 'Q7', 'S3', 'A7', 'A5', 'Q5', 'A3', 'Q3', 'S5', 'RS 7', 'A3 Sportback e-tron', 'S4', 'A8', 'SQ5', 'Q8', 'RS 5', 'A4 allroad', 'S7', 'SQ7', 'RS 6', 'S8', 'S6', 'A5 Sport'],
+                'BMW' : ['X', 'Series', 'i', 'M', 'Z', '3 Series', '7 Series', '5 Series', 'i3', '4 Series', 'X3', 'X2', 'X5', 'X1', 'Z4', 'M3', '2 Series', 'X6', 'M2', '1 Series', '6 Series', 'X5 M', 'M4', 'M6', 'X4', 'X6 M', 'X7', '8 Series', 'i8', 'M5', 'X3 M'],
+                'Buick' : ['Encore', 'Enclave', 'LaCrosse', 'Verano', 'Envision', 'Cascada', 'Regal', 'Encore GX', 'Lucerne', 'Regal Sportback', 'Regal TourX'],
+                'Cadillac' : ['CTS', 'XT', 'ATS', 'SRX', 'XTS', 'CT', 'ELR', 'Escalade ESV', 'DTS', 'XT5', 'XT4', 'Escalade', 'CT6', 'CT5', 'Escalade EXT', 'CT4', 'XT6', 'CTS-V', 'ATS-V', 'STS', 'XLR'],
+                'Chevrolet' : ['Trax', 'Traverse', 'Spark', 'Sonic', 'Cruze', 'Impala', 'Equinox', 'Volt', 'Camaro', 'Malibu', 'Cruze Limited', 'Captiva Sport', 'Trailblazer', 'Blazer', 'Colorado Extended Cab', 'Colorado Crew Cab', 'Silverado Crew Cab', 'Suburban', 'Impala Limited', 'Spark EV', 'Silverado Double Cab', 'Tahoe', 'Corvette', 'Silverado HD Crew Cab', 'Silverado HD Regular Cab', 'Silverado Limited Crew Cab', 'Bolt EV', 'City Express', 'Silverado Regular Cab', 'Malibu Limited', 'Silverado 1500 Crew Cab', 'Silverado 1500 Double Cab', 'Silverado 3500 HD Crew Cab', 'Silverado 2500 HD Crew Cab', 'Silverado 1500 Regular Cab', 'Suburban 1500', 'HHR', 'Avalanche', 'SS', 'Silverado 1500 Limited Double Cab', 'Silverado 2500 HD Double Cab', 'Cobalt', 'Express 3500 Cargo', 'Express 2500 Passenger', 'Silverado 1500 Limited Regular Cab', 'Aveo', 'Silverado 1500 Limited Crew Cab', 'Colorado Regular Cab', 'Silverado 1500 Extended Cab', 'Silverado 2500 HD Regular Cab', 'Express 3500 Passenger', 'Express 1500 Cargo'],
+                'Chrysler' : ['Sebring', 'Voyager', 'Pacifica', 'Town & Country', '200', '300', 'Pacifica Hybrid', 'PT Cruiser'],
+                'Dodge' : ['Grand Caravan Passenger', 'Journey', 'Avenger', 'Charger', 'Dart', 'Durango', 'Challenger', 'Ram 1500 Quad Cab', 'Caliber', 'Nitro', 'Ram 1500 Regular Cab'],
+                'FIAT' : ['Spider', 'Abarth', 'X', 'L', 'c Abarth', '500', '500X', '500L', '124 Spider', '500 Abarth', '500e', '500c', '500c Abarth'],
+                'Ford' : ['Escape', 'Fusion', 'Edge', 'Fiesta', 'Mustang', 'Explorer', 'EcoSport', 'Focus', 'F Super Cab', 'Taurus', 'Flex', 'F SuperCrew Cab', 'Bronco Sport', 'Expedition', 'Fusion Energi', 'Expedition MAX', 'C-MAX Energi', 'Mustang MACH-E', 'Ranger SuperCrew', 'F Regular Cab', 'Bronco', 'Maverick', 'Transit Connect Passenger Wagon', 'Transit Wagon', 'Expedition EL', 'F Lightning', 'Transit Connect Passenger', 'Focus ST', 'C-MAX Hybrid', 'F150 SuperCrew Cab', 'F250 Super Duty Super Cab', 'F150 Super Cab', 'Transit 150 Wagon', 'Transit Connect Cargo Van', 'F150 Regular Cab', 'Transit Connect Cargo', 'Ranger Super Cab', 'Transit 150 Van', 'Ranger Regular Cab', 'Transit 250 Cargo Van', 'Escape Plug-in Hybrid', 'Ranger SuperCab', 'Transit 250 Van', 'F250 Super Duty Crew Cab', 'E350 Super Duty Passenger', 'Transit 150 Cargo Van', 'E250 Cargo', 'Transit 350 Passenger Van', 'Transit 350 Wagon', 'F250 Super Duty Regular Cab', 'Fusion Plug-in Hybrid'],
+                'GMC' : ['Terrain', 'Acadia', 'Yukon', 'Acadia Limited', 'Yukon XL', 'Sierra Double Cab', 'Sierra Crew Cab', 'Canyon Crew Cab', 'Sierra Limited Crew Cab', 'Sierra Regular Cab', 'Sierra 1500 Crew Cab', 'Canyon Extended Cab', 'Sierra 1500 Regular Cab', 'Sierra 1500 Double Cab', 'Sierra 2500 HD Crew Cab', 'Sierra 3500 HD Crew Cab', 'Sierra 1500 Extended Cab', 'Sierra 3500 HD Regular Cab', 'Yukon XL 1500', 'Sierra 1500 Limited Double Cab', 'Sierra 2500 HD Double Cab', 'Sierra 1500 Limited Crew Cab', 'Sierra 2500 HD Extended Cab'],
+                'Genesis' : ['G', 'GV80', 'G80', 'G70', 'G90', 'GV70'],
+                'HUMMER' : ['H3', 'H3T'],
+                'Honda' : ['Civic', 'Accord', 'Odyssey', 'CR-V', 'Fit', 'HR-V', 'CR-Z', 'Pilot', 'Insight', 'Crosstour', 'Ridgeline', 'Clarity Plug-in Hybrid', 'Accord Hybrid', 'CR-V Hybrid', 'Passport', 'Civic Type R', 'Accord Crosstour', 'Element'],
+                'Hyundai' : ['Sonata', 'Veloster', 'Elantra', 'Accent', 'Kona', 'Tucson', 'Venue', 'Santa Fe Sport', 'Ioniq Hybrid', 'Genesis', 'Santa Fe', 'Elantra GT', 'Sonata Hybrid', 'Azera', 'IONIQ', 'Palisade', 'Santa Cruz', 'Tucson Hybrid', 'Genesis Coupe', 'Veracruz', 'Sonata Plug-in Hybrid', 'Ioniq Plug-in Hybrid', 'Equus', 'Ioniq Electric', 'Santa Fe Hybrid', 'Kona Electric', 'IONIQ 5', 'Santa Fe XL', 'Kona N', 'Elantra N'],
+                'INFINITI' : ['QX', 'Q', 'EX', 'G', 'M', 'FX', 'JX', 'QX50', 'QX60', 'Q40', 'Q50', 'QX70', 'QX80', 'QX30', 'Q60', 'Q70', 'QX55'],
+                'Jaguar' : ['F-TYPE', 'XF', 'XE', 'E-PACE', 'XJ', 'F-PACE', 'XK', 'I-PACE'],
+                'Jeep' : ['Wrangler', 'Renegade', 'Compass', 'Patriot', 'Grand Cherokee', 'Cherokee', 'Gladiator', 'Wrangler Unlimited', 'Wagoneer', 'Grand Cherokee L', 'Liberty', 'Wrangler Unlimited 4xe'],
+                'Kia' : ['Optima', 'Soul', 'Forte', 'Sportage', 'Cadenza', 'Sedona', 'Rio', 'Optima Hybrid', 'Sorento', 'Niro', 'Seltos', 'Soul EV', 'K', 'Telluride', 'Forte Koup', 'Carnival', 'Sorento Plug-in Hybrid', 'Sorento Hybrid', 'Stinger', 'EV', 'Niro EV', 'Forte5', 'K5', 'Niro Plug-in Hybrid', 'K900', 'EV6', 'Optima Plug-in Hybrid', 'Rondo'],
+                'Land Rover' : ['Range Rover Velar', 'Discovery', 'Range Rover Evoque', 'Discovery Sport', 'Range Rover Sport', 'LR4', 'Defender 110', 'Range Rover', 'LR2'],
+                'Lexus' : ['ES', 'IS', 'GS', 'RX', 'GX', 'CT', 'LC', 'HS', 'NX', 'RC', 'UX', 'LS', 'LX', 'SC'],
+                'Lincoln' : ['MKC', 'MKX', 'MKZ', 'MKS', 'Town Car', 'Corsair', 'Nautilus', 'Navigator', 'Continental', 'MKT', 'Aviator', 'Navigator L'],
+                'MAZDA' : ['CX-', 'MAZDA', 'MX- Miata', 'Tribute', 'MX- Miata RF', 'MAZDA3', 'CX-5', 'MAZDA5', 'MAZDA6', 'MX-5 Miata RF', 'CX-3', 'MX-5 Miata', 'MAZDA2', 'CX-30', 'CX-9', 'CX-7', 'MX-30'],
+                'MINI' : ['Hardtop Door', 'Coupe', 'Convertible', 'Countryman', 'Clubman', 'Hardtop', 'Roadster', 'Paceman', 'Hardtop 2 Door', 'Hardtop 4 Door'],
+                'Maserati' : ['Levante', 'Ghibli', 'Quattroporte', 'GranTurismo'],
+                'Mercedes-Benz' : ['SLK-Class', 'GLA', 'C-Class', 'E-Class', 'CLA-Class', 'M-Class', 'CLA', 'GLC', 'SL-Class', 'GLE', 'CLK-Class', 'A-Class', 'GLK-Class', 'CLS-Class', 'SL', 'Mercedes-AMG GLE Coupe', 'S-Class', 'Mercedes-AMG C-Class', 'GLB', 'GLS', 'SLC', 'GLA-Class', 'Mercedes-AMG SLC', 'Mercedes-AMG GLC', 'B-Class', 'R-Class', 'SLK', 'Metris Passenger', 'GLC Coupe', 'Mercedes-AMG GLE', 'GL-Class', 'Mercedes-AMG GLA', 'CL-Class', 'Mercedes-AMG GLB', 'CLS', 'G-Class', 'GLE Coupe', 'Mercedes-AMG GLC Coupe', 'Metris Cargo', 'Mercedes-AMG CLS'],
+                'Mercury' : ['Milan', 'Sable', 'Grand Marquis', 'Mariner'],
+                'Mitsubishi' : ['Eclipse Cross', 'Mirage G', 'Outlander Sport', 'Outlander', 'Mirage', 'i-MiEV', 'Outlander PHEV', 'Lancer', 'Mirage G4', 'Eclipse', 'Galant', 'Lancer Evolution'],
+                'Nissan' : ['Pathfinder', 'Rogue Sport', 'Sentra', 'Rogue', 'Frontier King Cab', 'Altima', 'Kicks', 'Murano', 'Versa', 'LEAF', 'Maxima', 'JUKE', 'Rogue Select', 'Frontier Crew Cab', 'Z', 'Armada', 'Versa Note', 'Xterra', 'Titan Crew Cab', 'TITAN XD Crew Cab', 'Quest', '370Z', 'TITAN Single Cab', 'Titan King Cab', 'TITAN XD Single Cab', 'NV2500 HD Cargo', 'GT-R', 'cube', 'NV1500 Cargo', 'NV200', 'TITAN XD King Cab'],
+                'Polestar' : ['2'],
+                'Pontiac' : ['Solstice', 'G8', 'G6', 'Vibe'],
+                'Porsche' : ['Boxster', 'Macan', 'Cayman', 'Cayenne', 'Panamera', '911', '718 Cayman', '718 Boxster'],
+                'Ram' : ['Regular Cab', 'Crew Cab', 'Quad Cab', 'Classic Quad Cab', 'Classic Crew Cab', 'Classic Regular Cab', '1500 Quad Cab', '1500 Crew Cab', '1500 Regular Cab', '3500 Crew Cab', 'ProMaster Cargo Van', '1500 Classic Quad Cab', '1500 Classic Regular Cab', '1500 Classic Crew Cab', '2500 Crew Cab', 'C/V Tradesman', '2500 Mega Cab', 'ProMaster Window Van', 'Dakota Crew Cab'],
+                'Saab' : ['9-3'],
+                'Saturn' : ['SKY', 'VUE', 'Aura'],
+                'Scion' : ['tC', 'FR-S', 'iQ', 'xD', 'iM', 'xB', 'iA'],
+                'Subaru' : ['Legacy', 'XV Crosstrek', 'Forester', 'Impreza', 'Outback', 'Crosstrek', 'Ascent', 'WRX', 'BRZ'],
+                'Suzuki' : ['SX4', 'XL7'],
+                'Tesla' : ['Model Y', 'Model', 'Model S', 'Model X', 'Model 3'],
+                'Toyota' : ['Corolla', 'C-HR', 'Yaris', 'Corolla iM', 'Camry', 'Prius v', 'Yaris iA', 'Sienna', 'Prius', 'Prius c', 'Avalon', 'RAV', 'Tacoma Double Cab', 'Runner', 'Camry Hybrid', 'Highlander', 'Sequoia', 'Venza', 'Tundra Double Cab', 'Tacoma Access Cab', 'GR', 'Prius Plug-in Hybrid', 'RAV Hybrid', 'Tundra CrewMax', 'GR Supra', 'Prius Prime', 'Corolla Cross', 'FJ Cruiser', 'Corolla Hatchback', 'Corolla Hybrid', 'Tundra Hybrid CrewMax', 'Highlander Hybrid', 'Matrix', 'Yaris Hatchback', '4Runner', 'RAV4', '86', 'RAV4 Hybrid', 'GR86', 'Tacoma Regular Cab', 'Land Cruiser', 'RAV4 Prime', 'Tundra Regular Cab', 'Avalon Hybrid'],
+                'Volkswagen' : ['Atlas', 'Jetta', 'Tiguan', 'Passat', 'Jetta SportWagen', 'Beetle', 'Tiguan Limited', 'Golf SportWagen', 'Golf', 'Touareg', 'Golf GTI', 'Routan', 'Eos', 'e-Golf', 'CC', 'GTI', 'ID.', 'Atlas Cross Sport', 'Jetta GLI', 'Golf Alltrack', 'New Beetle', 'Golf R', 'ID.4', 'Arteon', 'Taos', 'Rabbit'],
+                'Volvo' : ['S', 'C', 'XC', 'V', 'S60', 'XC90', 'S90', 'XC40', 'V60', 'C70', 'XC60', 'XC70', 'V90', 'C30', 'S80', 'XC40 Recharge', 'S40'],
+                'smart' : ['fortwo', 'fortwo electric drive', 'fortwo electric drive cabrio', 'fortwo cabrio']
+            };
+
+            function updateYear(value) {
+                document.getElementById('yearValue').textContent = value;
+            }
+        
+            function updateMiles(value) {
+                document.getElementById('milesValue').textContent = value;
+            }
+    
+            // Clear existing options
+            
+            function updateCar() {
+                var Make = document.getElementById('Make').value;
+                var Model = document.getElementById('Model');
+                var Year = document.getElementById('Year')
+                var Miles = document.getElementById('Miles')
+    
+                Model.innerHTML = '';
+    
+                if (Make in cars){
+                    cars[Make].forEach(carModel => {
+                        var option = document.createElement('option');
+                        option.value = carModel;
+                        option.textContent = carModel;
+                        Model.appendChild(option);
+                    });
+                }
+            }
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto ApprAIsal</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles2.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="hero">
+    <nav>
+        <a href="{{ url_for('welcome') }}" class="nav-link">
+        <div class="nav-container">
+                <img class="logo" src="{{ url_for('static', filename='icons/discount.png') }}">
+                <span class="logo-text">Auto Appr<span class="highlight">AI</span>sal</span>
+        </div>
+    </a>
+    </nav>
+   <div class="wrapper fade-in">
+    <form method="POST" action="{{url_for('home')}}" autocomplete="off">
+        <h1 class="anim">We Just Need a <span class="highlight anim">Few Things</span>:<h1>
+        <div class="input-box anim">
+            <select class="input-dropdown anim" style="cursor: pointer" placeholder="Make" id="Make" name="Make" onchange="updateCar()" required>
+                    <option value="" disabled selected>Select Car Make</option>
+                    <option value="Acura">Acura</option>
+                    <option value="Alfa Romeo">Alfa Romeo</option>
+                    <option value="Audi">Audi</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Buick">Buick</option>
+                    <option value="Cadillac">Cadillac</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Chrysler">Chrysler</option>
+                    <option value="Dodge">Dodge</option>
+                    <option value="FIAT">FIAT</option>
+                    <option value="Ford">Ford</option>
+                    <option value="GMC">GMC</option>
+                    <option value="Genesis">Genesis</option>
+                    <option value="HUMMER">HUMMER</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="INFINITI">INFINITI</option>
+                    <option value="Jaguar">Jaguar</option>
+                    <option value="Jeep">Jeep</option>
+                    <option value="Kia">Kia</option>
+                    <option value="Land Rover">Land Rover</option>
+                    <option value="Lexus">Lexus</option>
+                    <option value="Lincoln">Lincoln</option>
+                    <option value="MAZDA">MAZDA</option>
+                    <option value="MINI">MINI</option>
+                    <option value="Maserati">Maserati</option>
+                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                    <option value="Mercury">Mercury</option>
+                    <option value="Mitsubishi">Mitsubishi</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Polestar">Polestar</option>
+                    <option value="Pontiac">Pontiac</option>
+                    <option value="Porsche">Porsche</option>
+                    <option value="Ram">Ram</option>
+                    <option value="Saab">Saab</option>
+                    <option value="Saturn">Saturn</option>
+                    <option value="Scion">Scion</option>
+                    <option value="Subaru">Subaru</option>
+                    <option value="Suzuki">Suzuki</option>
+                    <option value="Tesla">Tesla</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Volvo">Volvo</option>
+                    <option value="smart">smart</option>                
+                </select>
+            <i class='bx bxs-car'></i>
+        </div>
+        <div class="input-box anim">
+            <select class="input-dropdown anim" id="Model" name="Model" style="cursor: pointer" required>
+                <option value="" disabled selected>Select Car Model</option>
+            </select>
+            <i class='bx bx-car'></i>
+        </div>
+        <div class="holding">
+        <div class="input-box anim">
+            <label for="yearRange">Year: <span id="yearValue">2012</span></label>
+            <input type="range" class="input-slider" id="yearRange" name="Year" min="2000" max="2024" value="2012" oninput="updateYear(this.value)" required>
+            <!--<input class="anim" placeholder="Year" id="Year" name="Year" required>-->
+            <!--<i class='bx bxs-time-five'></i>-->
+        </div>
+        <div class="input-box anim">
+            <label for="milesRange">Miles: <span id="milesValue">150000</span></label>
+            <input type="range" class="input-slider" id="milesRange" name="Miles" min="0" max="300000" step="1000" value="150000" oninput="updateMiles(this.value)" required>
+            <!--<input class="anim" placeholder="Miles" id="Miles" name="Miles" required>-->
+            <!--<i class='bx bxs-car-mechanic'></i>-->
+        </div>
+        </div>
+        <button type="submit" class="btn" style="cursor: pointer" value="Predict">ApprAIse Me</button>
+    </form>
+</body>
+</html>

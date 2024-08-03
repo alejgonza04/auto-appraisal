@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto ApprAIsal</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles3.css') }}">
+</head>
+<body>
+    <div class="hero">
+    <nav>
+        <a href="{{ url_for('welcome') }}" class="nav-link">
+        <div class="nav-container">
+                <img class="logo" src="{{ url_for('static', filename='icons/discount.png') }}">
+                <span class="logo-text">Auto Appr<span class="highlight">AI</span>sal</span>
+        </div>
+    </a>
+    </nav>
+    <div class="hero-content">
+        <div class="content">
+            <h1 class="anim">The <span class="highlight">predicted value</span> of your car is:</h1>
+            <h1 class="value anim">${{ data }}</h1>
+            <a href="{{ url_for('home_page') }}"  class="btn anim">ApprAIse Another Car</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

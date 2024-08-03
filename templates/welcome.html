@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto ApprAIsal</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="hero">
+    <nav>
+        <a href="{{ url_for('welcome') }}" class="nav-link">
+        <div class="nav-container">
+                <img class="logo" src="{{ url_for('static', filename='icons/discount.png') }}">
+                <span class="logo-text">Auto Appr<span class="highlight">AI</span>sal</span>
+        </div>
+    </a>
+    </nav>
+    <div class="hero-content">
+        <div class="content">
+            <h1 class="anim">Meet Auto Appr<span class="color-highlight">AI</span>sal</h1>
+            <p class="anim">Experience the future of car valuation with Auto Appr<span class="color-highlight">AI</span>sal.</p>
+            <p class="anim">No sign-up. No hidden fees. No inconvenient visits to appraisal centers.</p>
+            <p class="anim">Get the value of your used car now.</p>
+            <a href="{{ url_for('home_page') }}"  class="btn anim">Get Started</a>
+        </div>
+        <img class="feature-img anim" src="{{ url_for('static', filename='icons/mercedes.png') }}">
+    </div>
+    <div class="features">
+        <div class="features-content">
+            <h1 class="anim">How It Works:</h1>
+            <div class="image-text-holder">
+                <img class="side-img1 anim" src="{{ url_for('static', filename='icons/accuracy.png') }}">
+                <div class="image-text">
+                    <img class="feature-img2 anim" src="{{ url_for('static', filename='icons/loading.png') }}">
+                    <p class=fade-in>Utilizing machine learning techniques and extensive training on used car datasets,
+                    we offer precise predictions for your car's market value.
+                    </p>
+                </div>
+            </div>
+
+            <div class="image-text-holder">
+                    <div class="image-text">
+                    <img class="feature-img3 anim" src="{{ url_for('static', filename='icons/loading.png') }}">
+                    <p class=fade-in>With an 86% accuracy rate on our testing models, we can ensure you receive a reliable estimate of your car’s worth.
+                    </p>
+                </div>
+                <img class="side-img2 anim" src="{{ url_for('static', filename='icons/focus.png') }}">
+            </div>
+
+            <div class="image-text-holder">
+                <img class="side-img3 anim" src="{{ url_for('static', filename='icons/veracity.png') }}">
+                    <div class="image-text">
+                    <img class="feature-img4 anim" src="{{ url_for('static', filename='icons/loading.png') }}">
+                    <p class=fade-in>All we need is your car's make, model, year, and miles. That's it. For free, no questions asked.</p>
+                </div>
+            </div>
+        </div>
+</div>
+</body>
+</html>

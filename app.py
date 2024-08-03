@@ -5,9 +5,9 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 import joblib
 
 model = joblib.load('model.pkl')
-model = joblib.load('X_train_columns.pkl')
-model = joblib.load('label_encoders.pkl')
-model = joblib.load('scaler.pkl')
+X_train_columns = joblib.load('X_train_columns.pkl')
+label_encoders = joblib.load('label_encoders.pkl')
+scaler = joblib.load('scaler.pkl')
 
 def encode_labels(data, label_encoders):
     for column, encoder in label_encoders.items():

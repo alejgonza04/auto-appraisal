@@ -13,7 +13,6 @@ from sklearn.preprocessing import StandardScaler
 import pickle as pickle
 import joblib
 
-
 data = pd.read_csv('carvana.csv')
 data2 = pd.read_csv('carvana_car_sold-2022-08.csv')
 data3 = pd.read_csv('car_web_scraped_dataset.csv')
@@ -294,10 +293,14 @@ performance_metrics = {
 predicted_price = best_model.predict(test_data_scaled)
 print(f"Predicted Price: ${predicted_price[0]:.2f}")
 
-joblib.dump(best_model, 'model.pkl', compress=9, protocol=4)
+joblib.dump(best_model, 'model.pkl', compress=3, protocol=4)
 
-joblib.dump(X_train.columns.tolist(), 'X_train_columns.pkl', compress=3, protocol=4)
+with open('X_train_columns.pkl', 'wb') as file:
+    pickle.dump(X_train.columns.tolist(), file)
 
-joblib.dump(label_encoders, 'label_encoders.pkl', compress=3, protocol=4)
+with open('label_encoders.pkl', 'wb') as file:
+    pickle.dump(label_encoders, file)
 
-joblib.dump(scaler, 'scaler.pkl', compress=3, protocol=4)
+with open('scaler.pkl', 'wb') as file:
+    pickle.dump(scaler, file)
+

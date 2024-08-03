@@ -296,16 +296,8 @@ print(f"Predicted Price: ${predicted_price[0]:.2f}")
 
 joblib.dump(best_model, 'model.pkl', compress=3, protocol=4)
 
+joblib.dump(X_train.columns.tolist(), 'X_train_columns.pkl', compress=3, protocol=4)
 
-with open('X_train_columns.pkl', 'wb') as file:
-    pickle.dump(X_train.columns.tolist(), file)
+joblib.dump(label_encoders, 'label_encoders.pkl', compress=3, protocol=4)
 
-with open('label_encoders.pkl', 'wb') as file:
-    pickle.dump(label_encoders, file)
-
-with open('performance_metrics.pkl', 'wb') as file:
-    pickle.dump(performance_metrics, file)
-
-with open('scaler.pkl', 'wb') as file:
-    pickle.dump(scaler, file)
-
+joblib.dump(scaler, 'scaler.pkl', compress=3, protocol=4)

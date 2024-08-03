@@ -294,7 +294,7 @@ performance_metrics = {
 predicted_price = best_model.predict(test_data_scaled)
 print(f"Predicted Price: ${predicted_price[0]:.2f}")
 
-joblib.dump(best_model, 'model.pkl', compress=3, protocol=4)
+joblib.dump(best_model, 'model.pkl', compress=9, protocol=4)
 
 joblib.dump(X_train.columns.tolist(), 'X_train_columns.pkl', compress=3, protocol=4)
 

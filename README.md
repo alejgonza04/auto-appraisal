@@ -43,5 +43,10 @@ Auto ApprAIsal is a sophisticated web application designed to simplify the proce
 # Future Development
 - This is my first startup, and I am planning on updating the website based on user feedback as well as expanding it to other martial art disciplines.
 
+# Resources
+- https://www.kaggle.com/datasets/ayaz11/used-car-price-prediction?select=car_web_scraped_dataset.csv
+- https://www.kaggle.com/datasets/ravishah1/carvana-predict-car-prices
+- https://www.kaggle.com/datasets/ayaz11/used-car-price-prediction/data
+
 # Author
 - Alejandro Gonzalez - https://github.com/alejgonza04

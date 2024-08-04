@@ -11,7 +11,7 @@
 https://auto-appraisal.onrender.com/
 
 # Technologies Used
-Python, CSS, HTML, Google Colab
+Python, Pandas, CSS, HTML, Google Colab
 
 # Hosting Websites Used
 https://render.com/

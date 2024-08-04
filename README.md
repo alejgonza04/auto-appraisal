@@ -13,19 +13,17 @@ Python, Pandas, NumPy, Scikit-Learn, RandomForestRegressor, XGBRegressor, Linear
 https://render.com/
 
 # About
-This project was created out of my love for martial arts and programming. After my training partners and I realized there was no efficient way to track our progress and training sessions over time, I decided to create a solution. I set out to create a web application that could:
-- Allow us to track our progress and sessions
-- Provide analytics of our training data
-- Teach us new techniques through videos
+This project was developed to create a more efficient solution for determining the value of used cars. Inspired by my father's experience as a car salesman, I recognized the need for an application that could automatically appraise vehicles, streamlining the process and providing accurate estimates quickly.
 
 # Features
 ### Overview
-Combat Clinic aids practitioners in their journey by enabling them to track their progress. By adding their training sessions, they get access to real-time graph analytics of their training hours and martial arts distribution. Additionally, practitioners have access to a diverse library of technique breakdown videos across various disciplines such as BJJ, Muay Thai, Boxing, and Wrestling. This intuitive approach allows them to visualize their progress, serving as motivation, accountability, and guidance.
+Auto ApprAIsal is a sophisticated web application designed to simplify the process of determining the value of your used car. Leveraging advanced machine learning models trained on extensive datasets, Auto ApprAIsal provides quick and accurate car valuations. Simply provide the make, model, year, and mileage of your vehicle, and our system will deliver an appraisal in seconds.
 
-# Account
-![cc 4](https://github.com/alejgonza04/Combat-Clinic/assets/149022594/44da0ca6-9077-4a19-930a-e9ef0a43553e)
+# How It Works
+![aa2](https://github.com/user-attachments/assets/ee2ba21a-f379-4321-b792-aa4a8b837411)
 
-- Users are able to create an account that links their progress and session data with their email, stored on a MongoDB database.
+![aa3](https://github.com/user-attachments/assets/b8ab886d-567a-4235-9ad6-d5d9e171bf77)
+
 
 # Dashboard
 ![Screenshot 2024-07-02 154613](https://github.com/alejgonza04/Combat-Clinic/assets/149022594/4b530c7b-0a71-493c-ad96-bd8dc7b9d8a8)

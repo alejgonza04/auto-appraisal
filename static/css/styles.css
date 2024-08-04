@@ -251,7 +251,7 @@ nav ul li a {
   animation-delay: 1.5s;
   width: 500px;
   @media (max-width: 450px) {
-    width: 450px;
+    width: 400px;
   }
 }
 
@@ -260,7 +260,7 @@ nav ul li a {
   animation-delay: 1.5s;
   width: 500px;
   @media (max-width: 450px) {
-    width: 450px;
+    width: 400px;
   }
 }
 
@@ -269,7 +269,7 @@ nav ul li a {
   animation-delay: 1.5s;
   width: 500px;
   @media (max-width: 450px) {
-    width: 450px;
+    width: 400px;
   }
 }
 
@@ -336,6 +336,9 @@ nav ul li a {
   text-align: center;
   margin: 0;
   animation-delay: 1.5s;
+  @media (max-width: 450px) {
+    font-size: 18px;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -354,4 +357,10 @@ nav ul li a {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
+}
+
+@supports (--css: variables) {
+  .hero {
+    padding-top: env(safe-area-inset-top);
+  }
 }

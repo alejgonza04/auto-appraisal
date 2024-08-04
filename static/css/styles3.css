@@ -193,3 +193,9 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+
+  @supports (--css: variables) {
+    .hero {
+      padding-top: env(safe-area-inset-top);
+    }
+  }

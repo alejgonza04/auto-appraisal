@@ -7,7 +7,7 @@
 https://auto-appraisal.onrender.com/
 
 # Technologies Used
-Python, Pandas, NumPy, Scikit-Learn, RandomForestRegressor, XGBRegressor, LinearRegression, GridSearchCV, Joblib, Pickle, CSS, HTML, Flask, django, Render, Google Colab
+Python, Pandas, NumPy, Scikit-Learn, RandomForestRegressor, XGBRegressor, LinearRegression, GridSearchCV, Joblib, Pickle, CSS, HTML, Flask, Django, Render, Google Colab
 
 # Hosting Websites Used
 https://render.com/
@@ -23,6 +23,9 @@ Auto ApprAIsal is a sophisticated web application designed to simplify the proce
 ![aa2](https://github.com/user-attachments/assets/ee2ba21a-f379-4321-b792-aa4a8b837411)
 
 ![aa3](https://github.com/user-attachments/assets/b8ab886d-567a-4235-9ad6-d5d9e171bf77)
+
+- I utilized Kaggle web-scraped datasets from platforms like Carvana, using Pandas to manipulate and combine data focused on car make, model, year, and mileage, while dropping irrelevant columns. The data was then cleaned, with non-numeric values encoded using LabelEncoder and scaled with StandardScaler. I trained the model using RandomForestRegressor, XGBRegressor, and LinearRegression, optimizing them with GridSearchCV. RandomForestRegressor achieved the highest R² score and the lowest RMSE and MAE for both training and testing. The models, along with the training columns, encoders, and scalers, were then saved using Pickle and Joblib, and the model was compressed to reduce file size.
+- The model was integrated into a Flask application, with app routes for different pages. Using Django, HTML, and CSS, I developed a UI that emphasizes conciseness and efficiency.
 
 
 # Collecting Data To Make a Prediction

@@ -39,11 +39,11 @@ Auto ApprAIsal is a sophisticated web application designed to simplify the proce
 - The model predicts the car's value with 86% accuracy, demonstrating a strong alignment between its predictions and the actual values based on the training data.
 
 # Project Use
-- This project is a non-profit free to use website meant to help the martial arts community. It was shared with practitioners online and fellow training partners at my local gym.
-- With 50+ registered users, practitioners consistently praise the website for its usefulness in visualizing their progress and enhancing their learning experience.
+- 
+- 
 
 # Future Development
-- This is my first startup, and I am planning on updating the website based on user feedback as well as expanding it to other martial art disciplines.
+- 
 
 # Resources
 - https://www.kaggle.com/datasets/ayaz11/used-car-price-prediction?select=car_web_scraped_dataset.csv

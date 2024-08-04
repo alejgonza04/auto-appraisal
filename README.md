@@ -25,8 +25,7 @@ Auto ApprAIsal is a sophisticated web application designed to simplify the proce
 ![aa3](https://github.com/user-attachments/assets/b8ab886d-567a-4235-9ad6-d5d9e171bf77)
 
 - I utilized Kaggle web-scraped datasets from platforms like Carvana, using Pandas to manipulate and combine data focused on car make, model, year, and mileage, while dropping irrelevant columns. The data was then cleaned, with non-numeric values encoded using LabelEncoder and scaled with StandardScaler. I trained the model using RandomForestRegressor, XGBRegressor, and LinearRegression, optimizing them with GridSearchCV. RandomForestRegressor achieved the highest R² score and the lowest RMSE and MAE for both training and testing. The models, along with the training columns, encoders, and scalers, were then saved using Pickle and Joblib, and the model was compressed to reduce file size.
-- The model was integrated into a Flask application, with app routes for different pages. Using Django, HTML, and CSS, I developed a UI that emphasizes conciseness and efficiency.
-
+- The model was then integrated into a Flask application, creating app routes for different pages. Using Django, HTML, and CSS, I developed a UI that emphasizes conciseness and efficiency. The platform was then deployed using Render.
 
 # Collecting Data To Make a Prediction
 ![Screenshot 2024-08-03 232537](https://github.com/user-attachments/assets/9a882b9a-49fb-4a3d-bef7-a4806774c49e)

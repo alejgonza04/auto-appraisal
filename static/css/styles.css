@@ -356,8 +356,7 @@ nav ul li a {
 @supports (--css: variables) {
   .hero {
     padding-top: env(safe-area-inset-top);
-    padding-right: env(safe-area-inset-right);
     padding-bottom: env(safe-area-inset-bottom);
-    padding-left: env(safe-area-inset-left);
+    background-color: #000;
   }
 }

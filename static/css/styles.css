@@ -1,10 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Set the default background color to black */
+  color: #fff; /* Set default text color to white */
+}
+
+@supports (padding: env(safe-area-inset-top)) {
+  body {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
 }
 
 /* Your unique font class */
@@ -351,12 +364,4 @@ nav ul li a {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
-}
-
-@supports (--css: variables) {
-  .hero {
-    padding-top: env(safe-area-inset-top);
-    padding-bottom: env(safe-area-inset-bottom);
-    background-color: #000;
-  }
 }

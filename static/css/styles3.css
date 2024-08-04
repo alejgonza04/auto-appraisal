@@ -1,5 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Set the default background color to black */
+}
 
 @supports (padding: env(safe-area-inset-top)) {
   body {

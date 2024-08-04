@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #000; /* Set the default background color to black */
-  color: #fff; /* Set default text color to white */
 }
 
 @supports (padding: env(safe-area-inset-top)) {

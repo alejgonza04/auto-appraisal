@@ -20,6 +20,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(0deg, #575757, #000000);
+    background-color: #000;
     font-family: "Poppins", sans-serif;
 }
 

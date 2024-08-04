@@ -25,36 +25,16 @@ Auto ApprAIsal is a sophisticated web application designed to simplify the proce
 ![aa3](https://github.com/user-attachments/assets/b8ab886d-567a-4235-9ad6-d5d9e171bf77)
 
 
-# Dashboard
-![Screenshot 2024-07-02 154613](https://github.com/alejgonza04/Combat-Clinic/assets/149022594/4b530c7b-0a71-493c-ad96-bd8dc7b9d8a8)
+# Collecting Data To Make a Prediction
+![Screenshot 2024-08-03 232537](https://github.com/user-attachments/assets/9a882b9a-49fb-4a3d-bef7-a4806774c49e)
 
-- From here, users can add a session, view their sessions, or look at their session data analytics.
-- Users also get to view their total training time, sparring time, and total days training.
+- From here, users can add information about their car that the machine learning model will use to make a prediction on the car's value.
+- Users can select from a plethora of car makes and their respective models. 
 
-# Add Session
-![Screenshot 2024-07-02 154638](https://github.com/alejgonza04/Combat-Clinic/assets/149022594/c74cfb97-6927-42e9-b264-3324a03c5751)
+# The Results
+![Screenshot 2024-08-03 230747](https://github.com/user-attachments/assets/8016b158-8528-404f-8e67-3b3c0df1ee64)
 
-- Users are able to add important information from their training sessions, such as what discipline they trained in, how long it was, what techniques they used, how long they sparred, and what day they did it.
-
-# Graph and Chart Data of Progress
-![Screenshot 2024-07-02 154712](https://github.com/alejgonza04/Combat-Clinic/assets/149022594/e0b789ce-cca3-4122-bdae-6849fe5c78c0)
-
-- The bar graph shows users their training hours over a span of dates.
-- The pie chart shows the user the number of hours they trained each discipline.
-- This vizualization aids users in their journey as they get to see how many hours they are training each day and what disciplines they should prioritize for balance.
-
-# Sessions
-![Screenshot 2024-07-02 154942](https://github.com/alejgonza04/Combat-Clinic/assets/149022594/e23f1086-006e-4684-9b39-5741c478f800)
-
-- An overview of all user session data is laid out and organized by date.
-
-# Technique Breakdown Videos
-![Screenshot 2024-07-02 160050](https://github.com/alejgonza04/Combat-Clinic/assets/149022594/cfd8c71e-d85b-46b5-b834-0f5b1b1e7d62)
-![Screenshot 2024-07-02 160118](https://github.com/alejgonza04/Combat-Clinic/assets/149022594/4bd424ff-37a1-4cae-8e94-d3cbf8e4119b)
-![Screenshot 2024-07-02 155955](https://github.com/alejgonza04/Combat-Clinic/assets/149022594/2c282aa7-29cc-438c-a34d-76a5016d21a2)
-
-- Users can select a discipline pick from a plethora of in-depth technique breakdown videos explained by professional and experienced martial artists.
-- This gives the user an opportunity to train, practice, and learn outside of the gym, elevating their game for next time they come to training.
+- The model predicts the car's value with 86% accuracy, demonstrating a strong alignment between its predictions and the actual values based on the training data.
 
 # Project Use
 - This project is a non-profit free to use website meant to help the martial arts community. It was shared with practitioners online and fellow training partners at my local gym.

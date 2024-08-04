@@ -11,11 +11,10 @@
 https://auto-appraisal.onrender.com/
 
 # Technologies Used
-JavaScript, MongoDB, ExpressJS, React, Node.js
+Python, CSS, HTML, Google Colab
 
 # Hosting Websites Used
-Front-End: https://www.netlify.com/
-Back-End: https://render.com/
+https://render.com/
 
 # About
 This project was created out of my love for martial arts and programming. After my training partners and I realized there was no efficient way to track our progress and training sessions over time, I decided to create a solution. I set out to create a web application that could:

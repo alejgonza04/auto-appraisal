@@ -31,8 +31,8 @@ Auto ApprAIsal is a sophisticated web application designed to simplify the proce
 # Collecting Data To Make a Prediction
 ![Screenshot 2024-08-03 232537](https://github.com/user-attachments/assets/9a882b9a-49fb-4a3d-bef7-a4806774c49e)
 
-- From here, users can add information about their car that the machine learning model will use to make a prediction on the car's value.
-- Users can select from a plethora of car makes and their respective models. 
+- Users can add information about their car that the machine learning model will use to make a prediction on the car's value.
+- Users are given a plethora of car makes and their respective models. 
 
 # The Results
 ![Screenshot 2024-08-03 230747](https://github.com/user-attachments/assets/8016b158-8528-404f-8e67-3b3c0df1ee64)

@@ -7,7 +7,7 @@
 https://auto-appraisal.onrender.com/
 
 # Technologies Used
-Python, Pandas, NumPy, Scikit-Learn, RandomForestRegressor, XGBRegressor, LinearRegression, GridSearchCV, Joblib, Pickle, CSS, HTML, Google Colab
+Python, Pandas, NumPy, Scikit-Learn, RandomForestRegressor, XGBRegressor, LinearRegression, GridSearchCV, Joblib, Pickle, CSS, HTML, Flask, django, Render, Google Colab
 
 # Hosting Websites Used
 https://render.com/

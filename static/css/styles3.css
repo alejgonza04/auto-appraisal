@@ -124,6 +124,9 @@ body {
     border-radius: 30px;
     border-top-right-radius: 0;
     transition: 0.5s;
+    @media (max-width: 450px) {
+      font-weight: 600;
+    }
   }
   
   .content{

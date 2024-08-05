@@ -4,15 +4,15 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 import joblib
 
-model = joblib.load('model.pkl')
-with open('X_train_columns.pkl', 'rb') as file:
+model = joblib.load('pkls/model.pkl')
+with open('pkls/X_train_columns.pkl', 'rb') as file:
     X_train_columns = pickle.load(file)
 
 # Load the label encoders
-with open('label_encoders.pkl', 'rb') as file:
+with open('pkls/label_encoders.pkl', 'rb') as file:
     label_encoders = pickle.load(file)
 
-with open('scaler.pkl', 'rb') as file:
+with open('pkls/scaler.pkl', 'rb') as file:
     scaler = pickle.load(file)
 
 def encode_labels(data, label_encoders):

@@ -194,6 +194,7 @@ nav {
     border: none;
     outline: none;
     margin-top: 20px;
+    font-weight: 600;
     transition: 0.5s;
     @media (max-width: 450px) {
         top: 25px;

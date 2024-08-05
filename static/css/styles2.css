@@ -195,6 +195,10 @@ nav {
     outline: none;
     margin-top: 20px;
     transition: 0.5s;
+    @media (max-width: 450px) {
+        top: 25px;
+        font-weight: 600;
+    }
 }
   
 .btn:hover {

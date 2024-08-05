@@ -138,6 +138,7 @@ nav ul li a {
   border-radius: 30px;
   border-top-right-radius: 0;
   transition: 0.5s;
+  font-weight: 600;
   @media (max-width: 450px) {
     display: block; /* Ensure the button is treated as a block-level element */
     padding: 14px 40px; /* Adjust padding if needed */

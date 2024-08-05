@@ -68,7 +68,7 @@ nav {
     max-width: 80px;
     width: auto;
     @media (max-width: 450px) {
-        width: 60px;
+        width: 60px; /* Keeps the logo fixed in the viewport */
       }
 }
   
@@ -93,14 +93,18 @@ nav {
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     border-radius: 10px;
-    margin: 0 auto;
-    position: absolute;
     padding: 30px 40px;
+    position: absolute; 
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); 
-    @media (max-width: 450px) {
-        width: 350px;
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+}
+
+@media (max-width: 450px) {
+    .wrapper {
+        width: 350px; 
+        top: 120px; 
+        transform: translateX(-50%); 
     }
 }
 
@@ -194,7 +198,6 @@ nav {
     border: none;
     outline: none;
     margin-top: 20px;
-    font-weight: 600;
     transition: 0.5s;
     @media (max-width: 450px) {
         top: 25px;

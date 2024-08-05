@@ -38,12 +38,11 @@ Auto ApprAIsal is a sophisticated web application designed to simplify the proce
 
 - The model predicts the car's value with 86% accuracy, demonstrating a strong alignment between its predictions and the actual values based on the training data.
 
-# Project Use
-- 
-- 
+# Considerations
+- This model was trained using data predominantly from 2022 Carvana listings. Consequently, there may be discrepancies between the model's predictions and current market sale prices in 2024. This potential variation should be taken into account when evaluating the model's performance.
 
 # Future Development
-- 
+- I intend to update the model as new datasets become available, and I am also keen to learn web scraping, as it would be a valuable skill for the future development of this project.
 
 # Resources
 - https://www.kaggle.com/datasets/ayaz11/used-car-price-prediction?select=car_web_scraped_dataset.csv

@@ -11,7 +11,6 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
 import pickle as pickle
-from sklearn.model_selection import RandomizedSearchCV
 import joblib
 
 data = pd.read_csv('datasets/carvana.csv')
@@ -123,60 +122,7 @@ def model_evaluation(true, predicted):
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
-'''
-models = {
-    "Random Forest Regressor": RandomForestRegressor(),
-    "XGBRegressor": XGBRegressor()
-}
 
-param_distributions = {
-    "Random Forest Regressor": {
-        'n_estimators': np.random.randint(50, 300, size=10),  # Randomly sample 10 values
-        'max_depth': [None] + list(np.random.randint(10, 40, size=5)),
-        'min_samples_split': np.random.randint(2, 12, size=5)
-    },
-    "XGBRegressor": {
-        'n_estimators': np.random.randint(50, 300, size=10),
-        'learning_rate': np.random.uniform(0.01, 0.3, size=10),
-        'max_depth': np.random.randint(3, 10, size=5)
-    }
-}
-
-# Evaluate models with hyperparameter tuning using RandomizedSearchCV
-for model_name, model in models.items():
-    random_search = RandomizedSearchCV(
-        estimator=model, 
-        param_distributions=param_distributions[model_name], 
-        n_iter=100,  # number of parameter settings that are sampled
-        cv=5, 
-        scoring='neg_mean_squared_error',
-        random_state=42,
-        n_jobs=-1  # use all available processors
-    )
-    random_search.fit(X_train_scaled, Y_train)
-
-    best_model = random_search.best_estimator_
-
-    Y_train_p = best_model.predict(X_train_scaled)
-    Y_test_p = best_model.predict(X_test_scaled)
-
-    model_train_mae, model_train_rmse, model_train_r2 = model_evaluation(Y_train, Y_train_p)
-    model_test_mae, model_test_rmse, model_test_r2 = model_evaluation(Y_test, Y_test_p)
-
-    print(model_name)
-    print("Best Parameters:", random_search.best_params_)
-    print('Model Training Performances')
-    print(f"R2 Score: {model_train_r2}")
-    print(f"RMSE: {model_train_rmse}")
-    print(f"MAE: {model_train_mae}")
-
-    print('Model Test Performances')
-    print(f"R2 Score: {model_test_r2}")
-    print(f"RMSE: {model_test_rmse}")
-    print(f"MAE: {model_test_mae}")
-    print('\n')
-'''
-'''
 # define models and parameters for GridSearchCV
 models = {
     "Random Forest Regressor": RandomForestRegressor(),
@@ -222,91 +168,6 @@ for model_name, model in models.items():
     print(f"MAE: {model_test_mae}")
 
     print('\n')
-Random Forest Regressor
-Best Parameters: {'max_depth': None, 'min_samples_split': 5, 'n_estimators': 200}
-Model Training Performances
-R2 Score: 0.9684374842023856
-RMSE: 1719.7076127418825
-MAE: 884.4977945499543
-Model Test Performances
-R2 Score: 0.883680742111431
-RMSE: 3322.085406383798
-MAE: 1632.4166030053875
-
-Best Parameters: {'max_depth': 30, 'min_samples_split': 5, 'n_estimators': 200}
-Model Training Performances
-R2 Score: 0.9625868544478987
-RMSE: 1911.7171642600324
-MAE: 965.7406287192564
-Model Test Performances
-R2 Score: 0.8626296243136744
-RMSE: 3680.6652577555533
-MAE: 1844.0141156088052
-
-
-XGBRegressor
-Best Parameters: {'learning_rate': 0.2, 'max_depth': 6, 'n_estimators': 200}
-Model Training Performances
-R2 Score: 0.9078741423481613
-RMSE: 2938.052685611779
-MAE: 1689.3716020208847
-Model Test Performances
-R2 Score: 0.8713853361955057
-RMSE: 3493.254485933821
-MAE: 1867.341445995628
-
-!!!
-Model Training Performances
-R2 Score: 0.9747925005326554
-RMSE: 1569.1931767590445
-MAE: 782.8804015182764
-Model Test Performances
-R2 Score: 0.8636174056298821
-RMSE: 3667.408208336265
-MAE: 1828.1646733083257
-'''
-'''
-model2 = {
-    'LinearRegression': LinearRegression()
-}
-
-param_grids = {
-    'LinearRegression': {}
-}
-
-for model_name, model in model2.items():
-    grid_search = GridSearchCV(estimator=model, param_grid=param_grids[model_name], cv=5, scoring='neg_mean_squared_error')
-    grid_search.fit(X_train_scaled, Y_train)
-
-    best_model = grid_search.best_estimator_
-
-    Y_train_p = best_model.predict(X_train_scaled)
-    Y_test_p = best_model.predict(X_test_scaled)
-
-    model_train_mae, model_train_rmse, model_train_r2 = model_evaluation(Y_train, Y_train_p)
-    model_test_mae, model_test_rmse, model_test_r2 = model_evaluation(Y_test, Y_test_p)
-
-    print(model_name)
-    print("Best Parameters:", grid_search.best_params_)
-    print('Model Training Performances')
-    print(f"R2 Score: {model_train_r2}")
-    print(f"RMSE: {model_train_rmse}")
-    print(f"MAE: {model_train_mae}")
-
-    print('Model Test Performances')
-    print(f"R2 Score: {model_test_r2}")
-    print(f"RMSE: {model_test_rmse}")
-    print(f"MAE: {model_test_mae}")
-    LinearRegression
-        Best Parameters: {}
-        Model Training Performances
-        R2 Score: 0.27258084150644324
-        RMSE: 8255.838237893306
-        MAE: 5657.34540772094
-        Model Test Performances
-        R2 Score: 0.28454724660814756
-        RMSE: 8239.018190400164
-        MAE: 5611.402309037089'''
 
 test_data = pd.DataFrame({
     'Year': [2009],

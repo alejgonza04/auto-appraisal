@@ -58,7 +58,8 @@ nav {
     background: transparent;
     z-index: 100;
 }
-  
+
+
 .nav-container {
     display: flex;
     align-items: center;
@@ -82,10 +83,10 @@ nav {
         font-size: 1.2rem;
       }
 }*/
-  
+  /*
 .nav-link {
     text-decoration: none;
-}
+}*/
 
 .wrapper {
     width: 600px;

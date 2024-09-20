@@ -63,12 +63,13 @@ nav {
     display: flex;
     align-items: center;
 }
-  
+
+/*
 .logo {
     max-width: 80px;
     width: auto;
     @media (max-width: 450px) {
-        width: 60px; /* Keeps the logo fixed in the viewport */
+        width: 60px; /* Keeps the logo fixed in the viewport 
       }
 }
   
@@ -80,7 +81,7 @@ nav {
     @media (max-width: 450px) {
         font-size: 1.2rem;
       }
-}
+}*/
   
 .nav-link {
     text-decoration: none;
